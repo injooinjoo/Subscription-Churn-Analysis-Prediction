@@ -37,46 +37,6 @@ src/
 └── main.py # 메인 실행 파일
 ```
 
-## 설치 방법
-
-1. 저장소 클론
-```bash
-git clone https://github.com/injooinjoo/Subscription-Churn-Analysis-Prediction.git
-cd soop-churn-prediction
-```
-
-2. 가상환경 생성 및 활성화
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-```
-
-3. 의존성 패키지 설치
-```bash
-pip install -r requirements.txt
-```
-
-## 사용 방법
-
-1. 데이터 준비
-- `data/raw/` 디렉토리에 `subscriber_data.csv` 파일을 위치시킵니다.
-- 필요한 컬럼:
-  - user_id: 사용자 고유 식별자
-  - signup_date: 가입일
-  - streaming_hours: 시청 시간
-  - login_frequency: 로그인 빈도
-  - payment_amount: 결제 금액
-  - subscription_plan: 구독 플랜
-  - content_category: 콘텐츠 카테고리
-  - payment_status: 결제 상태
-  - churn_status: 이탈 여부
-
-2. 실행
-```bash
-python src/main.py
-```
-
 ## 모델 성능
 
 - Accuracy: 85.3%
